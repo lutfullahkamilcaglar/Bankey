@@ -13,6 +13,7 @@
 		F51DC7342A09205E0093ECBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51DC7322A09205E0093ECBD /* LaunchScreen.storyboard */; };
 		F54F930A2A1784BA00F575FA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F93092A1784BA00F575FA /* LoginView.swift */; };
 		F5E240E62A4F11200011134C /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E240E52A4F11200011134C /* OnboardingContainerViewController.swift */; };
+		F5E240E82A4F1B170011134C /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E240E72A4F1B170011134C /* OnBoardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F51DC7352A09205E0093ECBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F54F93092A1784BA00F575FA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F5E240E52A4F11200011134C /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
+		F5E240E72A4F1B170011134C /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F5E240E52A4F11200011134C /* OnboardingContainerViewController.swift */,
+				F5E240E72A4F1B170011134C /* OnBoardingViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				F51DC72C2A09205D0093ECBD /* LoginViewController.swift in Sources */,
 				F51DC7282A09205D0093ECBD /* AppDelegate.swift in Sources */,
 				F5E240E62A4F11200011134C /* OnboardingContainerViewController.swift in Sources */,
+				F5E240E82A4F1B170011134C /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
