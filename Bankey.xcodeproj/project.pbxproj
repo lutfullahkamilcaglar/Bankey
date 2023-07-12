@@ -21,6 +21,7 @@
 		F5E240FC2A5573050011134C /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E240FB2A5573050011134C /* AccountSummaryViewController.swift */; };
 		F5E240FE2A5575AC0011134C /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E240FD2A5575AC0011134C /* AccountSummaryHeaderView.swift */; };
 		F5E241002A5575F10011134C /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5E240FF2A5575F10011134C /* AccountSummaryHeaderView.xib */; };
+		F5E241042A5598FD0011134C /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E241032A5598FD0011134C /* AccountSummaryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F5E240FB2A5573050011134C /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		F5E240FD2A5575AC0011134C /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		F5E240FF2A5575F10011134C /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
+		F5E241032A5598FD0011134C /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,10 +127,27 @@
 			isa = PBXGroup;
 			children = (
 				F5E240FB2A5573050011134C /* AccountSummaryViewController.swift */,
+				F5E241022A5598E00011134C /* Cells */,
+				F5E241012A5598C90011134C /* Header */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		F5E241012A5598C90011134C /* Header */ = {
+			isa = PBXGroup;
+			children = (
 				F5E240FD2A5575AC0011134C /* AccountSummaryHeaderView.swift */,
 				F5E240FF2A5575F10011134C /* AccountSummaryHeaderView.xib */,
 			);
-			path = AccountSummary;
+			path = Header;
+			sourceTree = "<group>";
+		};
+		F5E241022A5598E00011134C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F5E241032A5598FD0011134C /* AccountSummaryCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +227,7 @@
 				F5E240FE2A5575AC0011134C /* AccountSummaryHeaderView.swift in Sources */,
 				F5E240EA2A52021B0011134C /* DummyVC.swift in Sources */,
 				F51DC72C2A09205D0093ECBD /* LoginViewController.swift in Sources */,
+				F5E241042A5598FD0011134C /* AccountSummaryCell.swift in Sources */,
 				F51DC7282A09205D0093ECBD /* AppDelegate.swift in Sources */,
 				F5E240F12A536FB40011134C /* MainViewController.swift in Sources */,
 				F5E240FC2A5573050011134C /* AccountSummaryViewController.swift in Sources */,
