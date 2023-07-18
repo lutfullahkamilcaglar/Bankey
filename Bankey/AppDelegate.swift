@@ -15,8 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     let loginViewController = LoginViewController()
-    let onboardingContainerVC = OnboardingContainerViewController()
-    let dummyVC = DummyVC()
+    let onboardingViewController = OnboardingContainerViewController()
     let mainViewController = MainViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]?) -> Bool {
@@ -26,15 +25,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .systemBackground
         
         loginViewController.delegate = self
-        onboardingContainerVC.delegate = self
-        dummyVC.logoutDelegate = self
+        onboardingViewController.delegate = self
         
-       // window?.rootViewController = onboardingContainerVC
-//        window?.rootViewController = loginViewController
-//        window?.rootViewController = mainViewController
-        window?.rootViewController = AccountSummaryViewController()
-       // window?.rootViewController = OnboardingContainerViewController()
-        
+        let vc = mainViewController
+        vc.setStatusBar()
+
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().backgroundColor = appColor
+            
+        window?.rootViewController = vc
+            
         return true
         
     }
@@ -67,9 +67,9 @@ extension AppDelegate: LogoutDelegate {
 extension AppDelegate: LoginViewControllerDelegate {
     func didLogin() {
         if LocalState.hasOnboarded {
-            setRootViewController(dummyVC)
+            setRootViewController(mainViewController)
         } else {
-            setRootViewController(onboardingContainerVC)
+            setRootViewController(onboardingViewController)
         }
     }
     
@@ -78,7 +78,7 @@ extension AppDelegate: LoginViewControllerDelegate {
 extension AppDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
         LocalState.hasOnboarded = true
-        setRootViewController(dummyVC)
+        setRootViewController(mainViewController)
     }
     
 }
